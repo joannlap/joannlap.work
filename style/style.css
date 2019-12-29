@@ -428,6 +428,12 @@ section>h2 {
     color: #FFBFD6;
 }
 
+section .flow {
+    display: flex;
+    align-items: flex-start;
+    height: 80vh;
+}
+
 /* contact */
 
 .details {
