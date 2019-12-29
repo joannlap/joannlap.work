@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jo-AnnLAP</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,14 +27,13 @@
                 <span class="heading-primary-main">and</span>
                 <span class="heading-primary-colored-3">technology.</span>
             </h1>
-            <a href="#" class="btn btn-white btn-animated">My work</a>
+            <a href="#wrapper" class="btn btn-white btn-animated">My work</a>
         </div>
     </header>
 
     <section class="about">
         <h2>Hi.</h2>
         <div class="shade-about">
-
             <div class="me">
                 <img src="img/me.png" alt="">
                 <a href="curriculumvitae.pdf" target="blank" class="btn btn-white btn-animated">Download CV</a>
@@ -54,22 +54,22 @@
                 <span class="heading-primary-main">and be somewhat creative like painting on</span>
                 <span class="heading-primary-colored-2">sneakers.</span>
             </div>
-
-
         </div>
     </section>
 
     <section class="projects">
         <h2>Projects.</h2>
         <div class="project-list">
-            <div class="shade">
-                <div class="project-content">
-                    <h4>Project Spotify</h4>
-                    <h3>Woohah x Spotify</h3>
-                    <a href="woohah.html" class="btn btn-white btn-animated">View</a>
-                </div>
-                <div class="image">
-                    <img src="img/woohah/coverportolio.png" alt="">
+            <div id="wrapper">
+                <div class="shade">
+                    <div class="project-content">
+                        <h4>Project Spotify</h4>
+                        <h3>Woohah x Spotify</h3>
+                        <a href="woohah.html" class="btn btn-white btn-animated">View</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/woohah/coverportolio.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="shade">
@@ -136,6 +136,7 @@
     </section>
 
     <footer>&copy; copyright 2019 | Jo-Ann LAP.</footer>
+    <script src="ja.js"></script>
 </body>
 
 </html>
