@@ -457,6 +457,8 @@ section .flow {
 /* responsive */
 
 @media screen and (max-width:600px) {
+
+    /* header */
     header .logo {
         height: 40px;
     }
@@ -466,4 +468,96 @@ section .flow {
         width: 9em;
         font-size: 1.8em;
     }
+
+    /* Hi. */
+
+    .me {
+        width: 220px;
+        display: block;
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+
+    .btn,
+    .btn:link .btn:visited {
+        margin: 2em 0 0 1.5em;
+    }
+
+    .me:before {
+        display: none;
+    }
+
+    .about-content {
+        position: relative;
+        background-color: rgba(221, 214, 255, 0%);
+        right: 15em;
+        margin-top: 18em;
+        margin-bottom: 3em;
+        width: 20em;
+        font-size: 20px;
+
+    }
+
+    /* projects */
+    .shade {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 15em;
+        position: relative;
+    }
+
+    .image {
+        width: 80%;
+        background-color: rgba(221, 214, 255, 11%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .shade:nth-child(odd)>.image:before {
+        content: " ";
+        background-color: rgba(221, 214, 255, 13%);
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        width: 23em;
+        height: 26em;
+        z-index: -1;
+    }
+
+    .shade:nth-child(even)>.image:before {
+        content: " ";
+        background-color: rgba(221, 214, 255, 13%);
+        position: absolute;
+        top: 2%;
+        right: 25%;
+        width: 23em;
+        height: 23em;
+        z-index: -1;
+    }
+
+    .shade:nth-child(odd)>.project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+        margin-right: 4em;
+
+    }
+
+    .shade:nth-child(even)>.project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        margin-left: 5em;
+    }
+
+    .shade:nth-child(odd)>.image,
+    .shade:nth-child(even)>.image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
