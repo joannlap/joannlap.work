@@ -452,3 +452,18 @@ section .flow {
     font-weight: 700;
     margin: 0 0 1em 4em;
 }
+
+
+/* responsive */
+
+@media screen and (max-width:600px) {
+    header .logo {
+        height: 40px;
+    }
+
+    h1 {
+        padding-top: 40px;
+        width: 9em;
+        font-size: 1.8em;
+    }
+}
