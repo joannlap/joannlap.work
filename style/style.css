@@ -434,6 +434,11 @@ section .flow {
     height: 80vh;
 }
 
+/* loadmap */
+.margin {
+    margin: 2em;
+}
+
 /* contact */
 
 .details {
