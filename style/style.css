@@ -9,9 +9,9 @@ html {
 }
 
 body {
-    font-family: "effra",
+    font-family: "brandon-grotesque",
         sans-serif;
-    font-size: 18px;
+    font-size: 19.5px;
     line-height: 1.7;
     padding: 30px;
     color: #FFF;
@@ -27,7 +27,7 @@ header>h2 {
     display: flex;
     justify-content: flex-start;
     color: #FFBFD6;
-    font-size: 80px;
+    font-size: 84px;
     opacity: 0.5;
 }
 
@@ -236,7 +236,7 @@ h1 {
 }
 
 .mynameis {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 600;
     line-height: 3em;
 }
@@ -453,11 +453,21 @@ section .flow {
 .contactinfo {
     display: flex;
     justify-content: flex-start;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 1em 4em;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 1em 2.6em;
 }
 
+.icons-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 2em 1em 2em;
+}
+
+.icons-social>a {
+    width: 3em;
+    margin: 2em;
+}
 
 /* responsive */
 
