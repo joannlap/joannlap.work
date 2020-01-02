@@ -479,6 +479,7 @@ section .flow {
     }
 
     h1 {
+        padding-top: 10px;
         width: 8em;
         font-size: 1.9em;
     }
