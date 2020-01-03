@@ -594,7 +594,7 @@ section .flow {
         flex-direction: column;
         align-items: flex-start;
         text-align: start;
-        margin-left: 5em;
+        margin-left: 2em;
     }
 
     .shade:nth-child(odd)>.image,
@@ -604,4 +604,23 @@ section .flow {
         align-items: center;
     }
 
+    /* hobbies */
+
+    .container img {
+        height: 40vh;
+    }
+
+    /* contact */
+
+    .icons-social {
+        margin: 0;
+    }
+
+    .details {
+        margin: 2em 0 1em;
+    }
+
+    .contactinfo {
+        margin: 2em 0 2.5em;
+    }
 }
