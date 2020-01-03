@@ -11,7 +11,7 @@ html {
 body {
     font-family: "brandon-grotesque",
         sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
     padding: 30px;
     color: #FFF;
@@ -20,6 +20,10 @@ body {
 
 header {
     height: 700px;
+}
+
+h1 {
+    font-size: 20px;
 }
 
 header>h2 {
