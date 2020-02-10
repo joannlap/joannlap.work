@@ -15,7 +15,7 @@ body {
     line-height: 1.7;
     padding: 30px;
     color: #FFF;
-    background: #686282;
+    background: #252249;
 }
 
 header {
@@ -97,11 +97,11 @@ h1 {
 /* colors */
 
 .heading-primary-colored {
-    color: #CBACFF;
+    color: #EABAFE;
 }
 
 .heading-primary-colored-2 {
-    color: #FFBFD6;
+    color: #FF9DA4;
 }
 
 .heading-primary-colored-3 {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .heading-primary-colored-4 {
-    color: #C9FFE3;
+    color: #96FBFB;
 }
 
 /* animation */
@@ -169,8 +169,8 @@ h1 {
 }
 
 .btn-white {
-    background-color: #C9FFE3;
-    color: #686282;
+    background-color: #96FBFB;
+    color: #252249;
 }
 
 .btn::after {
@@ -187,7 +187,7 @@ h1 {
 }
 
 .btn-white::after {
-    background-color: #C9FFE3;
+    background-color: #96FBFB;
 }
 
 .btn:hover::after {
