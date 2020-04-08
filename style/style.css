@@ -67,6 +67,7 @@ footer {
 
 
 .logo-box {
+    display: none;
     position: absolute;
     top: 40px;
     left: 40px;
@@ -76,6 +77,15 @@ footer {
     height: 55px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.cover {
+    height: 6em;
+    margin: 2em;
+}
 
 /* slogan */
 
@@ -484,7 +494,7 @@ section .flow {
 
     h1 {
         padding-top: 10px;
-        width: 8em;
+        width: 12em;
         font-size: 1.9em;
     }
 
