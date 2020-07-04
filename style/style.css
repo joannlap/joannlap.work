@@ -83,7 +83,7 @@ h1 {
 }
 
 .cover {
-    height: 6em;
+    padding-right: 10em;
 }
 
 /* slogan */
@@ -493,8 +493,8 @@ section .flow {
 @media screen and (max-width:600px) {
 
     /* header */
-    header .logo {
-        height: 40px;
+    .cover {
+        padding-right: 0;
     }
 
     h1 {
