@@ -4,5 +4,12 @@
 }
 
 body {
-    color: #FFF9F2;
+    background-color: #FFF9F2;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
