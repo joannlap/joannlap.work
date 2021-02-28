@@ -12,13 +12,13 @@ body {
 
 @font-face {
     font-family: "Pangram";
-    src: url("../fonts/Pangram-Regular.otf") format("opentype");
+    src: url("../fonts/Pangram/Pangram-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Neue World";
     font-weight: 800;
-    src: url("../fonts/NeueWorld-Ultrabold.otf") format("opentype");
+    src: url("../fonts/NeueWorld/NeueWorld-Ultrabold.otf") format("opentype");
 }
 
 nav ul {
