@@ -16,7 +16,7 @@ nav ul {
     list-style: none;
     font-family: "Pangram", sans-serif;
     padding-top: 3em;
-    font-size: 18px;
+    font-size: clamp(1rem, 4vw, 3rem);
 }
 
 
@@ -24,79 +24,63 @@ h2 {
     font-family: "Neue World",
         sans-serif;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: clamp(1rem, 4vw, 3rem);
     color: #02497B;
 }
 
-
-figure img {
-    position: relative;
-    width: 100%;
+.logo {
+    display: flex;
+    padding: 10em 2em 10em 2em;
 }
 
 .logo img {
-    position: relative;
-    width: 100%;
-    padding: 10em 2em 18em 2em;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
 
-h1 {
+
+header h1 {
     font-family: "Pangram", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    position: absolute;
-    bottom: 0;
-    left: 5em;
+    font-size: clamp(1rem, 4vw, 3rem);
 }
 
 section {
+    display: flex;
+}
+
+figure {
     position: relative;
+}
+
+section h2 {
+    position: absolute;
+    top: 0;
+    left: 5em;
 }
 
 section:nth-of-type(1) figure img.joi-cover {
     position: absolute;
-    left: 1.5em;
+    left: -1em;
     top: 2em;
-    width: 90%;
-}
-
-section:nth-of-type(1) h2 {
-    position: absolute;
-    top: 0;
-    left: 7em;
-}
-
-section:nth-of-type(2) h2 {
-    position: absolute;
-    top: 0;
-    left: 6em;
+    width: 120%;
 }
 
 section:nth-of-type(3) figure img.psycards-cover {
     position: absolute;
-    left: 2em;
+    left: -1em;
     top: 4em;
-    width: 85%;
-}
-
-section:nth-of-type(3) h2 {
-    position: absolute;
-    top: 0;
-    left: 7em;
+    width: 110%;
 }
 
 section:nth-of-type(4) figure img.tesla-cover {
     position: absolute;
-    left: 0em;
-    top: 3em;
-    width: 90%;
+    right: 0;
+    top: 2em;
+    width: 110%;
 }
 
-section:nth-of-type(4) h2 {
-    position: absolute;
-    top: 0;
-    left: 5em;
-}
 
 /* hover effect */
 .joannie {
