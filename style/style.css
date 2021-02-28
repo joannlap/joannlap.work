@@ -12,13 +12,18 @@ body {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
-    font-family: "Pangram", sans-serif;
-    padding-top: 3em;
-    font-size: clamp(1rem, 4vw, 3rem);
+    padding-top: 2em;
 }
 
+nav ul a {
+    font-family: "Neue World",
+        sans-serif;
+    font-weight: 700;
+    color: #02497B;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
 
 h2 {
     font-family: "Neue World",
@@ -28,19 +33,22 @@ h2 {
     color: #02497B;
 }
 
-.logo {
+section img {
+    width: 100%;
+}
+
+section.hero {
+    max-height: 150%;
     display: flex;
-    padding: 10em 2em 10em 2em;
-}
-
-.logo img {
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    justify-content: center;
+    padding: 8em 1em;
 }
 
-
-header h1 {
+section.hero h1 {
+    display: flex;
+    justify-content: center;
     font-family: "Pangram", sans-serif;
     font-weight: 400;
     font-size: clamp(1rem, 4vw, 3rem);
@@ -48,10 +56,12 @@ header h1 {
 
 section {
     display: flex;
+    padding: 3rem 3rem 0 3rem;
 }
 
-figure {
+a {
     position: relative;
+    text-decoration: none;
 }
 
 section h2 {
@@ -60,27 +70,34 @@ section h2 {
     left: 5em;
 }
 
-section:nth-of-type(1) figure img.joi-cover {
+section:nth-of-type(1) a img.joi-cover {
     position: absolute;
     left: -1em;
     top: 2em;
     width: 120%;
 }
 
-section:nth-of-type(3) figure img.psycards-cover {
+section:nth-of-type(3) a img.psycards-cover {
     position: absolute;
     left: -1em;
     top: 4em;
     width: 110%;
 }
 
-section:nth-of-type(4) figure img.tesla-cover {
+section:nth-of-type(4) a img.tesla-cover {
     position: absolute;
     right: 0;
     top: 2em;
     width: 110%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    font-family: "Pangram",
+        sans-serif;
+}
 
 /* hover effect */
 .joannie {
