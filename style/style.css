@@ -7,12 +7,152 @@ body {
     position: relative;
     height: 100%;
     margin: 0;
+    background-color: #FFF9F2;
 }
 
-body {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Pangram", sans-serif;
+    padding-top: 3em;
+    font-size: 18px;
+}
+
+
+h2 {
+    font-family: "Neue World",
+        sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #02497B;
+}
+
+
+figure img {
+    position: relative;
+    width: 100%;
+}
+
+.logo img {
+    position: relative;
+    width: 100%;
+    padding: 10em 2em 18em 2em;
+}
+
+h1 {
+    font-family: "Pangram", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 5em;
+}
+
+section {
+    position: relative;
+}
+
+section:nth-of-type(1) figure img.joi-cover {
+    position: absolute;
+    left: 1.5em;
+    top: 2em;
+    width: 90%;
+}
+
+section:nth-of-type(1) h2 {
+    position: absolute;
+    top: 0;
+    left: 7em;
+}
+
+section:nth-of-type(2) h2 {
+    position: absolute;
+    top: 0;
+    left: 6em;
+}
+
+section:nth-of-type(3) figure img.psycards-cover {
+    position: absolute;
+    left: 2em;
+    top: 4em;
+    width: 85%;
+}
+
+section:nth-of-type(3) h2 {
+    position: absolute;
+    top: 0;
+    left: 7em;
+}
+
+section:nth-of-type(4) figure img.tesla-cover {
+    position: absolute;
+    left: 0em;
+    top: 3em;
+    width: 90%;
+}
+
+section:nth-of-type(4) h2 {
+    position: absolute;
+    top: 0;
+    left: 5em;
+}
+
+/* hover effect */
+.joannie {
+    --deltax: 2;
+    --deltay: 3;
+    --scale: 0.25;
+    --richting: 1;
+    --rotatie: 2.5;
+    --duur: 1.5;
+
+    --width: 2.2;
+    --height: 2;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background-color: #FFF9F2;
+
+    position: absolute;
+    width: calc(var(--width) * 0.8em);
+    height: calc(var(--height) * 0.8em);
+    left: calc(var(--posx) * 1px - var(--width) * 0.5em + var(--deltax) * -1em);
+
+    font-size: 2.5em;
+    /* border-radius: 50%; */
+    z-index: 2;
+
+    transform-origin: center 50%;
+    animation: draai calc(var(--duur) * 1s) ease-out forwards,
+        opneer calc(var(--duur) * 1s) forwards;
+}
+
+@keyframes draai {
+    0% {
+        transform: rotate(0turn) translatex(calc(var(--deltax) * 1em)) rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(calc(var(--richting) * 0.5turn)) translatex(calc(var(--deltax) * 1em)) rotate(calc(var(--rotatie) * 1turn));
+    }
+}
+
+@keyframes opneer {
+    0% {
+        opacity: 1;
+        top: calc(var(--posy) * 1px - (var(--width) + 0.125) * 1em);
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    30% {
+        top: calc(var(--posy) * 1px - (var(--width) + 0.125) * 1em - var(--deltay) * 1em);
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
 }

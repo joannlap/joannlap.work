@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="788.614" height="599.708" viewBox="0 0 788.614 599.708">
+  <g id="Group_1437" data-name="Group 1437" transform="translate(-262.148 -1377)">
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="767.614" height="582.708" rx="20" transform="translate(262.148 1377)" fill="#ece7eb"/>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(283.148 1395)" fill="none" stroke="#4e4343" stroke-width="4">
+      <rect width="767.614" height="581.708" rx="20" stroke="none"/>
+      <rect x="2" y="2" width="763.614" height="577.708" rx="18" fill="none"/>
+    </g>
+    <path id="Path_15" data-name="Path 15" d="M6546,2116.934h767.01" transform="translate(-6263.25 -668.261)" fill="none" stroke="#4e4343" stroke-width="4"/>
+    <g id="Group_27" data-name="Group 27" transform="translate(312.148 1411)">
+      <g id="Ellipse_1" data-name="Ellipse 1" fill="#be4545" stroke="#4e4343" stroke-width="4">
+        <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+        <circle cx="12.5" cy="12.5" r="10.5" fill="none"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(35)" fill="#edc967" stroke="#4e4b43" stroke-width="4">
+        <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+        <circle cx="12.5" cy="12.5" r="10.5" fill="none"/>
+      </g>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(71)" fill="#90d045" stroke="#4e4343" stroke-width="4">
+        <ellipse cx="12" cy="12.5" rx="12" ry="12.5" stroke="none"/>
+        <ellipse cx="12" cy="12.5" rx="10" ry="10.5" fill="none"/>
+      </g>
+    </g>
+    <line id="Line_2" data-name="Line 2" x2="77.827" transform="translate(632.738 1423.925)" fill="none" stroke="#4e4343" stroke-width="4"/>
+    <line id="Line_3" data-name="Line 3" x2="71.723" transform="translate(931.692 1423.925)" fill="none" stroke="#4e4343" stroke-width="4"/>
+  </g>
+</svg>

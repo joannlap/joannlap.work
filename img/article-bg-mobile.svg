@@ -1,0 +1,20 @@
+<svg id="Component_3_7" data-name="Component 3 – 7" xmlns="http://www.w3.org/2000/svg" width="316" height="340" viewBox="0 0 316 340">
+  <rect id="Rectangle_19" data-name="Rectangle 19" width="307" height="333" rx="15" transform="translate(9)" fill="#e8e7ec"/>
+  <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(0 8)" fill="none" stroke="#4e4343" stroke-width="2">
+    <rect width="306" height="332" rx="15" stroke="none"/>
+    <rect x="1" y="1" width="304" height="330" rx="14" fill="none"/>
+  </g>
+  <path id="Path_16" data-name="Path 16" d="M6546,2116.934h306" transform="translate(-6546 -2069.872)" fill="none" stroke="#4e4343" stroke-width="2"/>
+  <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(14 25)" fill="#be4545" stroke="#4e4343" stroke-width="1.5">
+    <circle cx="5" cy="5" r="5" stroke="none"/>
+    <circle cx="5" cy="5" r="4.25" fill="none"/>
+  </g>
+  <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(30 25)" fill="#edc967" stroke="#4e4343" stroke-width="1.5">
+    <circle cx="5" cy="5" r="5" stroke="none"/>
+    <circle cx="5" cy="5" r="4.25" fill="none"/>
+  </g>
+  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(46 25)" fill="#90d045" stroke="#4e4343" stroke-width="1.5">
+    <circle cx="5" cy="5" r="5" stroke="none"/>
+    <circle cx="5" cy="5" r="4.25" fill="none"/>
+  </g>
+</svg>
