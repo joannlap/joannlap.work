@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -21,6 +23,7 @@ body {
     src: url("../fonts/NeueWorld/NeueWorld-Ultrabold.otf") format("opentype");
 }
 
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -29,11 +32,15 @@ nav ul {
 }
 
 nav ul a {
-    font-family: "Neue World",
+    font-family: "Pangram",
         sans-serif;
-    font-weight: 700;
     color: #02497B;
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+a {
+    position: relative;
+    text-decoration: none;
 }
 
 h2 {
@@ -44,17 +51,27 @@ h2 {
     color: #02497B;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+section {
+    padding-top: 4em;
+}
+
 section img {
     width: 100%;
 }
 
 section.hero {
-    max-height: 150%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8em 1em;
+    padding: 2em;
 }
 
 section.hero h1 {
@@ -65,41 +82,35 @@ section.hero h1 {
     font-size: clamp(1rem, 4vw, 3rem);
 }
 
-section {
-    display: flex;
-    padding: 3rem 3rem 0 3rem;
-}
-
-a {
-    position: relative;
-    text-decoration: none;
-}
 
 section h2 {
     position: absolute;
-    top: 0;
-    left: 5em;
+    bottom: 18.5em;
+    left: 6.5em;
 }
 
 section:nth-of-type(1) a img.joi-cover {
     position: absolute;
     left: -1em;
-    top: 2em;
+    bottom: -1em;
     width: 120%;
+    z-index: 100;
 }
 
 section:nth-of-type(3) a img.psycards-cover {
     position: absolute;
     left: -1em;
-    top: 4em;
+    bottom: 2em;
     width: 110%;
+    z-index: 100;
+
 }
 
 section:nth-of-type(4) a img.tesla-cover {
     position: absolute;
-    right: 0;
-    top: 2em;
-    width: 110%;
+    right: 0.3em;
+    bottom: -1em;
+    width: 115%; 
 }
 
 footer {
