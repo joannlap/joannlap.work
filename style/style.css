@@ -8,118 +8,105 @@ html,
 body {
     position: relative;
     height: 100%;
-    margin: 0;
-    background-color: #FFF9F2;
+    background-color: #F5F3F0;
+    color: #231F20;
 }
 
 @font-face {
     font-family: "Pangram";
-    src: url("../fonts/Pangram/Pangram-Regular.otf") format("opentype");
+    src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype"),
+         url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Neue World";
-    font-weight: 800;
-    src: url("../fonts/NeueWorld/NeueWorld-Ultrabold.otf") format("opentype");
+    font-family: "NeueWorld";
+    src: url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
 }
 
-
-nav ul {
+ ul {
     display: flex;
-    justify-content: center;
     list-style: none;
-    padding-top: 2em;
+    justify-content: space-between;
+    padding: 2em;
 }
 
-nav ul a {
+.menu{
+    flex-direction: column;
+    align-items: center;
+}
+
+li a {
     font-family: "Pangram",
         sans-serif;
-    color: #02497B;
-    font-size: clamp(1rem, 4vw, 3rem);
-}
-
-a {
-    position: relative;
     text-decoration: none;
+    font-size: clamp(1rem, 4vw, 3rem);
+    color: #231F20;
 }
 
 h2 {
-    font-family: "Neue World",
-        sans-serif;
-    font-weight: 700;
-    font-size: clamp(1rem, 4vw, 3rem);
-    color: #02497B;
+    font-size: 4em;
+    font-family: "NeueWorld", sans-serif;
+    font-weight: 100;
 }
-
-.wrapper {
+.hero{
     display: flex;
-    flex-direction: column;
-    padding: 2em;
+}
+.blur {
+    width: 80vw;
+    height: 40vh;
+    background-color: #3F54F5;
+    border-radius: 80%;
+    filter: blur(2em);
+    opacity: .8;
+    z-index: 0;
+
 }
 
-section {
-    padding-top: 4em;
-}
-
-section img {
+.meKop img {
     width: 100%;
+    object-fit: cover;
+    object-position: 5em 0;
+    z-index: 10;
 }
 
-section.hero {
-    height: 80vh;
+/* WORK */
+
+.caseDes,
+.caseTitle a {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 2em;
+    align-items: space-between;
+    text-decoration: none;
+    color: #231F20;
 }
 
-section.hero h1 {
-    display: flex;
-    justify-content: center;
+.caseTitle {
+    font-size: 1.875em;
+}
+
+.container {
+    margin: 2.8em;
+}
+
+p {
     font-family: "Pangram", sans-serif;
-    font-weight: 400;
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-weight: 100;
+    font-size: 0.75em;
 }
 
+/* CASES */
+/* ABOUT */
+/* CONTACT */
+/* RESPONSIVE */
 
-section h2 {
-    position: absolute;
-    bottom: 18.5em;
-    left: 6.5em;
-}
+/* @media screen (min-width: 30em) {
+     
+ }
 
-section:nth-of-type(1) a img.joi-cover {
-    position: absolute;
-    left: -1em;
-    bottom: -1em;
-    width: 120%;
-    z-index: 100;
-}
+ @media screen (min-width: 48em) {
+     
+ } */
 
-section:nth-of-type(3) a img.psycards-cover {
-    position: absolute;
-    left: -1em;
-    bottom: 2em;
-    width: 110%;
-    z-index: 100;
-
-}
-
-section:nth-of-type(4) a img.tesla-cover {
-    position: absolute;
-    right: 0.3em;
-    bottom: -1em;
-    width: 115%; 
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
-    font-family: "Pangram",
-        sans-serif;
-}
 
 /* hover effect */
 .joannie {
