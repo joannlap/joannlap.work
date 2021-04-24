@@ -7,7 +7,9 @@
 html,
 body {
     position: relative;
-    height: 100%;
+     max-width: 100%;
+     height:100%;
+     overflow-x: hidden;
     background-color: #F5F3F0;
     color: #231F20;
 }
@@ -69,13 +71,11 @@ h2 {
     z-index: 0;
 }
 
-.meKop img {
+.meKop {
     position: absolute;
-    left: 20%;
-    top: 18%;
+    left:9em;
+    top: 20%;
     width: 80%;
-    object-fit: cover;
-    object-position: 4em 0;
     z-index: 10;
 }
 
