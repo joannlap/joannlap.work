@@ -52,7 +52,7 @@ li a {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: "NeueWorld", sans-serif;
     font-weight: 100;
 }
@@ -73,9 +73,9 @@ h2 {
 
 .meKop {
     position: absolute;
-    left:9em;
+    left:10em;
     top: 20%;
-    width: 80%;
+    width: 70%;
     z-index: 10;
 }
 
