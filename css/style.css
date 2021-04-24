@@ -20,6 +20,14 @@ body {
     font-family: "NeueWorld";
     src: url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Pangram";
+    src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Pangram";
+    src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+}
 
 /* --------------------------------
                 HOME
@@ -95,9 +103,17 @@ h2 {
 .caseTitle {
     font-size: 1.8em;
 }
+.case{
+     background-color: #EFEDEA;
+}
 
 .container {
-    margin: 2.8em;
+    margin: 2em 0 2em 0;
+ 
+}
+.case{
+    margin: 1em 0 1em 0;
+    padding-top: 1em;
 }
 
 .caseWrapper {
@@ -105,9 +121,10 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+   
 }
 .item{
-    width: 80%;
+    width: 60%;
     padding: 1em;
 }
 
