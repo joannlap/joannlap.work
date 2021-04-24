@@ -7,9 +7,9 @@
 html,
 body {
     position: relative;
-     max-width: 100%;
-     height:100%;
-     overflow-x: hidden;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     background-color: #F5F3F0;
     color: #231F20;
 }
@@ -29,26 +29,29 @@ body {
                 HOME
  ---------------------------------*/
 
+
 ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    padding:2.5em 2em 0 2em;
+    padding: 2.5em 2em 0 2em;
 }
 
 .menu {
     flex-direction: column;
 }
-li{
+
+li {
     padding: 1px 0 0.5em 0;
 }
+
 li a {
     font-family: "Pangram",
         sans-serif;
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 3rem);
     color: #231F20;
-    
+
 }
 
 h2 {
@@ -56,8 +59,9 @@ h2 {
     font-family: "NeueWorld", sans-serif;
     font-weight: 100;
 }
-.title{
-   margin-top: 4em;
+
+.title {
+    margin-top: 4em;
 }
 
 .blur {
@@ -67,13 +71,12 @@ h2 {
     background-color: #3F54F5;
     border-radius: 50%;
     filter: blur(3em);
-    opacity: .8;
     z-index: 0;
 }
 
 .meKop {
     position: absolute;
-    left:10em;
+    left: 10em;
     top: 20%;
     width: 70%;
     z-index: 10;
@@ -123,7 +126,6 @@ p {
 /* @media screen (min-width: 30em) {
      
  }
-
  @media screen (min-width: 48em) {
      
  } */
