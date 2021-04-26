@@ -6,12 +6,11 @@
 
 html,
 body {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     background-color: #F5F3F0;
-    color: #231F20;
+    color: #25292C;
 }
 
 
@@ -20,41 +19,53 @@ body {
     font-family: "NeueWorld";
     src: url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Pangram";
     src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Pangram";
     src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Object-Sans";
+    src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
+}
 /* --------------------------------
                 HOME
  ---------------------------------*/
-
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2em 2em;
+}
 
 ul {
     display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding: 2.5em 2em 0 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    list-style-type: none;
 }
 
-.menu {
-    flex-direction: column;
-}
 
 li {
     padding: 1px 0 0.5em 0;
+
 }
 
-li a {
+nav a {
     font-family: "Pangram",
         sans-serif;
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 3rem);
-    color: #231F20;
+    color: #25292C;
+    cursor: pointer;
 
 }
 
@@ -64,75 +75,81 @@ h2 {
     font-weight: 100;
 }
 
-.title {
-    margin-top: 4em;
+section.hero {
+    display: flex;
+    flex-direction: column;
 }
 
-.blur {
-    margin: 3em 0 0 5em;
-    width: 80%;
-    height: 40vh;
-    background-color: #3F54F5;
-    border-radius: 50%;
-    filter: blur(3em);
-    z-index: 0;
-}
 
-.meKop {
-    position: absolute;
-    left: 10em;
-    top: 20%;
+.meKop>img {
     width: 70%;
-    z-index: 10;
+    margin-left: 10em;
 }
 
 /* --------------------------------
                 WORK
  ---------------------------------*/
 
+/* section.wrapper {
+    margin-top: 3em;
+} */
 
-.caseTitle a,
-.caseDes p {
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
+main{
+    margin-top: 3em;
+}
+h1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Object-sans", sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    color: #D1CBC2;
+
+}
+h2 a {
     text-decoration: none;
-    color: #231F20;
+    cursor: pointer;
+    color:#25292C;
+    font-size: 0.7em;
+    line-height: 12pt;
 }
 
-.caseTitle {
-    font-size: 1.8em;
-}
-.case{
-     background-color: #EFEDEA;
+h3 {
+    font-family: "Object-sans", sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: #D1CBC2;
+
 }
 
-.container {
-    margin: 2em 0 2em 0;
- 
-}
-.case{
-    margin: 1em 0 1em 0;
-    padding-top: 1em;
-}
-
-.caseWrapper {
+.case {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-}
-.item{
-    width: 60%;
-    padding: 1em;
+    justify-content: space-around;
+    background-color: #EFEDEA;
+    flex-direction: column;
+    margin: 1.5em 0;
+
 }
 
+.caseDes {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2.5em ;
+    width:50%;
+}
 
 p {
     font-family: "Pangram", sans-serif;
     font-weight: 100;
     font-size: 0.75em;
+}
+
+.casePic {
+    width: 80%;
+    margin-left: 1.5em;
+ 
 }
 
 /* --------------------------------
