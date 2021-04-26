@@ -59,7 +59,7 @@ li {
 
 }
 
-nav a {
+nav a, .title a {
     font-family: "Pangram",
         sans-serif;
     text-decoration: none;
@@ -79,6 +79,12 @@ section.hero {
     display: flex;
     flex-direction: column;
 }
+
+.title{
+    z-index:100;
+    margin-top: -5em;
+}
+
 
 
 .meKop>img {
