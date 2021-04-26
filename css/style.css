@@ -88,7 +88,9 @@ section.hero {
     padding-right: 1em;
     margin-top: 2em;
 }
-
+.hero{
+    position: relative;
+}
 .meKop {
     width: 70%;
     margin-left: -3em;
@@ -99,10 +101,10 @@ section.hero {
     position: absolute;
     width: 60vw;
     height: 30vh;
-    background-color: #EF7777;
+    background-color: #ef7777d5;
     border-radius: 50%;
-    filter: blur(40px);
-    top:20em;
+    filter: blur(30px);
+    top:18em;
     left:2em;
     z-index: 0;
 }
