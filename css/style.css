@@ -88,9 +88,11 @@ section.hero {
     padding-right: 1em;
     margin-top: 2em;
 }
-.hero{
+
+.hero {
     position: relative;
 }
+
 .meKop {
     width: 70%;
     margin-left: -3em;
@@ -104,8 +106,8 @@ section.hero {
     background-color: #ef7777d5;
     border-radius: 50%;
     filter: blur(30px);
-    top:18em;
-    left:2em;
+    top: 18em;
+    left: 2em;
     z-index: 0;
 }
 
@@ -181,36 +183,49 @@ p {
                 CASES
  ---------------------------------*/
 
- .caseCover, h4{
-     width: 100%;
-     display: flex;
-     justify-content: center;
- }
- h5{
-     font-family: "Pangram", sans-serif;
-     font-size: 1.5em;
- }
- .wrapper{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     margin: 0 4em;
- }
+.caseCover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
- .caseMeta > p{
-   margin: 1em 0;
-   max-width: 10em;
- }
+h4 {
+    max-width: 10em;
+    margin: 3em;
+}
 
- .caseMeta{
-     flex: 1;
- }
- .caseDescription{
-     flex: 3;
-     margin: 1em 0;
- /* max-width: 50em; */
- }
+h5 {
+    font-family: "Pangram", sans-serif;
+    font-size: 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 4em;
+}
+
+.caseMeta>p {
+    margin: 1em 0;
+}
+
+.caseMeta {
+    margin: 2em 0;
+}
+
+.caseDescription {
+    flex: 3;
+    margin: 1em 0;
+}
+
+.caseDescription>h2 {
+    font-size: 2.5em;
+}
+
+.caseDescription>p {
+    margin-top: 1em;
+}
 
 
 /* --------------------------------
@@ -224,6 +239,12 @@ p {
  ---------------------------------*/
 
 @media screen and (min-width: 30em) {
+
+    nav a,
+    .launchTitle a {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
     .case {
         flex-direction: row;
     }
@@ -245,19 +266,60 @@ p {
     .launchTitle a {
         font-size: 2em;
     }
+
+    /* CASES */
+    h4{
+        font-size: 2em;
+        max-width: 50em;
+    }
+    .wrapper {
+        justify-content: center;
+       max-width: 60%;
+    }
+    .caseMeta{
+        flex: 2;
+    }
+
+    .caseMeta>p {
+        max-width: 10em;
+    }
+
+    .caseDescription {
+        flex: 3;
+        max-width: 30em;
+        
+    }
 }
 
 @media screen and (min-width: 48em) {
     .meKop {
         width: 40%;
     }
+
     ul {
         flex-direction: row;
     }
-    li{
+
+    li {
         margin: 0 1em;
     }
-}
+     /* CASES */
+     .wrapper {
+         flex-direction: row;
+         margin: 10em;
+     }
+
+     .caseMeta>p {
+         font-size: 1.5em;
+         max-width: 10em;
+     }
+
+     .caseDescription {
+         flex: 4;
+         font-size: 1.5em;
+         max-width: 40em;
+     }
+     
 
 
 /* hover effect */
