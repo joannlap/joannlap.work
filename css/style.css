@@ -32,11 +32,13 @@ body {
     font-family: "Object-Sans";
     src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Object-Sans";
     src: url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
 
 }
+
 /* --------------------------------
                 HOME
  ---------------------------------*/
@@ -78,7 +80,9 @@ h2 {
     font-family: "NeueWorld", sans-serif;
     font-weight: 100;
 }
-
+.caseDes>h2{
+    margin: 0.4em 0;
+}
 section.hero {
     display: flex;
     flex-direction: column;
@@ -87,15 +91,12 @@ section.hero {
 .launchTitle {
     display: flex;
     flex-direction: column;
-    z-index: 100;
     align-items: flex-end;
     padding-right: 1em;
     margin-top: 2em;
 }
 
-.hero {
-    position: relative;
-}
+
 
 .meKop {
     width: 70%;
@@ -277,6 +278,11 @@ h6 {
 
     h2 {
         font-size: 2em;
+    }
+
+    p,
+    h3 {
+        font-size: 0.7em;
     }
 
     .caseDes {
