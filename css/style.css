@@ -31,7 +31,7 @@ body {
 @font-face {
     font-family: "Object-Sans";
     src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype"),
-    url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
+        url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
 }
 
 /* --------------------------------
@@ -112,6 +112,16 @@ section.hero {
     z-index: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+footer>p {
+    font-size: 1em;
+}
+
 /*-------------------------------
                 WORK
  ---------------------------------*/
@@ -142,6 +152,7 @@ h3 {
     line-height: 1.5;
 
 }
+
 p {
     font-family: "ObjectSans-Regular", sans-serif;
     font-size: 0.6em;
@@ -202,7 +213,7 @@ h5 {
     font-size: 1em;
 }
 
-h6{
+h6 {
     margin: 1em 0;
     font-size: 1em;
 }
@@ -250,40 +261,43 @@ h6{
 
     nav a,
     .launchTitle a {
-        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-size: clamp(1rem, 2vw, 2rem);
     }
 
     .case {
         flex-direction: row;
     }
-h2{
-    font-size: 2em;
-}
+
+    .launchTitle>h2 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
     .caseDes {
         width: 20%;
         font-size: 1em;
     }
 
-    .casePic,
     .meKop {
-        width: 30%;
+        order: 1;
     }
 
     .casePic {
         margin-right: 5em;
+        width: 30%;
     }
 
     section.hero {
         flex-direction: row;
         justify-content: center;
+        padding: 0 10em;
     }
 
     .launchTitle {
-        margin-top: 0;
-    }
-
-    .launchTitle a {
-        font-size: 2em;
+        order: 2;
     }
 
     /* CASES */
@@ -320,13 +334,16 @@ h2{
     .hero {
         display: flex;
         flex-direction: row;
-
+        margin: 6em 0;
     }
 
     .launchTitle>h2 {
-        font-size: 12em;
+        font-size: 8em;
     }
 
+    .meKop {
+        width: 30%;
+    }
 
     ul {
         flex-direction: row;
@@ -354,7 +371,7 @@ h2{
     .caseMeta>p {
         font-size: 1em;
         max-width: 10em;
-        font-family: "ObjectSans-Thin",sans-serif;
+        font-family: "ObjectSans-Thin", sans-serif;
         font-weight: 100;
     }
 
