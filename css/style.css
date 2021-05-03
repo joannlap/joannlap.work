@@ -150,15 +150,15 @@ h2 a {
 h3 {
     font-family: "Object-sans", sans-serif;
     font-weight: 100;
-    font-size: 0.7em;
+    font-size: 1em;
     color: #D1CBC2;
     line-height: 1.5;
 
 }
 
 p {
-    font-family: "ObjectSans-Regular", sans-serif;
-    font-size: 0.6em;
+    font-family: "Object-sans", sans-serif;
+    font-size: 1em;
     line-height: 1.5;
 }
 
