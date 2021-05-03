@@ -80,9 +80,11 @@ h2 {
     font-family: "NeueWorld", sans-serif;
     font-weight: 100;
 }
-.caseDes>h2{
+
+.caseDes>h2 {
     margin: 0.4em 0;
 }
+
 section.hero {
     display: flex;
     flex-direction: column;
@@ -96,24 +98,10 @@ section.hero {
     margin-top: 2em;
 }
 
-
-
 .meKop {
     width: 70%;
     margin-left: -3em;
     z-index: 10;
-}
-
-.blur {
-    position: absolute;
-    width: 60vw;
-    height: 30vh;
-    background-color: #ef7777d5;
-    border-radius: 50%;
-    filter: blur(30px);
-    top: 18em;
-    left: 2em;
-    z-index: 0;
 }
 
 footer {
@@ -170,7 +158,13 @@ p {
     background-color: #EFEDEA;
     flex-direction: column;
     margin: 3em 0;
+}
 
+.caseContent {
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFEDEA;
+    flex-direction: column;
 }
 
 .caseDes {
@@ -268,7 +262,8 @@ h6 {
         font-size: clamp(1rem, 2vw, 2rem);
     }
 
-    .case {
+    .case,
+    .caseContent {
         flex-direction: row;
     }
 
@@ -309,6 +304,7 @@ h6 {
         order: 2;
     }
 
+
     /* CASES */
     h4 {
         font-size: 1em;
@@ -339,7 +335,7 @@ h6 {
     }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 68em) {
     .hero {
         display: flex;
         flex-direction: row;
@@ -366,6 +362,14 @@ h6 {
         font-size: 2em;
     }
 
+    .caseContent {
+        width: 100%;
+        max-width: 70vw;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        background-color: #EFEDEA;
+    }
 
     /* CASES */
     h4 {
