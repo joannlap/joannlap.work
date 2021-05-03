@@ -21,15 +21,22 @@ body {
 @font-face {
     font-family: "Pangram";
     src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype"),
-    url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Pangram";
+    src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Object-Sans";
-    src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype"),
-        url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
+    src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Object-Sans";
+    src: url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
 
+}
 /* --------------------------------
                 HOME
  ---------------------------------*/
