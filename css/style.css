@@ -20,12 +20,8 @@ body {
 
 @font-face {
     font-family: "Pangram";
-    src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Pangram";
-    src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+    src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -61,7 +57,7 @@ li {
 
 nav a,
 .launchTitle a {
-    font-family: "Pangram",
+    font-family: "Pangram-Regular",
         sans-serif;
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 3rem);
