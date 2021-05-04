@@ -102,7 +102,7 @@ section.hero {
     width: 70%;
     margin-left: -3em;
     z-index: 10;
-    object-fit: contain;
+    /* object-fit: scale-down; */
 }
 
 footer {
@@ -292,7 +292,7 @@ h6 {
 
     .casePic {
         margin-right: 5em;
-        width: 30%;
+        max-width: 40vw;
     }
 
     section.hero {
@@ -363,14 +363,13 @@ h6 {
         font-size: 1.5em;
     }
 
-    /* .caseContent {
-        width: 100%;
+    .caseContent {
         max-width: 80vw;
         position: relative;
         display: flex;
         justify-content: space-around;
         background-color: #EFEDEA;
-    } */
+    }
 
     /* CASES */
     h4 {
