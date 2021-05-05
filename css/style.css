@@ -39,6 +39,17 @@ body {
 
 }
 
+/*
+@font-face {
+    font-family: 'Faustina';
+    src: local('Faustina Bold'), local('Source-Sans-Pro-Bold'),
+        url('../../../src/assets/fonts/Faustina/Faustina-Bold.woff2') format('woff2'),
+        url('../../../src/assets/fonts/Faustina/Faustina-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+*/
+
 /* --------------------------------
                 HOME
  ---------------------------------*/
@@ -47,7 +58,7 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
-    padding: 2em 2em;
+    padding: 3em 3em;
 }
 
 ul {
@@ -65,7 +76,7 @@ li {
 }
 
 nav a,
-.launchTitle a {
+.launch-title a {
     font-family: "Pangram",
         sans-serif;
     text-decoration: none;
@@ -90,7 +101,7 @@ section.hero {
     flex-direction: column;
 }
 
-.launchTitle {
+.launch-title {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -98,11 +109,11 @@ section.hero {
     margin-top: 2em;
 }
 
-.meKop {
+.me-kop {
     width: 70%;
     margin-left: -3em;
     z-index: 10;
-    /* object-fit: scale-down; */
+    object-fit: scale-down;
 }
 
 footer {
@@ -125,7 +136,7 @@ h1 {
     right: 0;
     font-family: "Object-sans", sans-serif;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #D1CBC2;
 
 }
@@ -143,7 +154,6 @@ h3 {
     font-size: 1em;
     color: #D1CBC2;
     line-height: 1.5;
-
 }
 
 p {
@@ -161,7 +171,7 @@ p {
     margin: 3em 0;
 }
 
-.caseContent {
+.case-content {
     display: flex;
     justify-content: space-around;
     background-color: #EFEDEA;
@@ -176,7 +186,7 @@ p {
 }
 
 
-.casePic {
+.case-img {
     width: 80%;
     object-fit: contain;
     margin-left: 1.5em;
@@ -184,65 +194,69 @@ p {
 }
 
 /* --------------------------------
-                CASES
+           CASE STUDIES
  ---------------------------------*/
+ 
+ h4 {
+     margin: 0 2em;
+     max-width: 15em;
+     font-family: "NeueWorld", sans-serif;
+     font-weight: 100;
+ }
+ 
+ h5 {
+     font-family: "Pangram", sans-serif;
+     font-size: 1em;
+ }
+ 
+ h6 {
+     margin: 1em 0;
+     font-size: 1.5em;
+ }
 
-.caseCover {
+.case-cover {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 
-.caseHero {
+.case-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+        margin: 0 auto;
 
-h4 {
-    margin: 0 2em;
-    max-width: 15em;
-    font-family: "NeueWorld-Regular", sans-serif;
-    font-weight: 100;
-}
-
-h5 {
-    font-family: "Pangram", sans-serif;
-    font-size: 1em;
-}
-
-h6 {
-    margin: 1em 0;
-    font-size: 1em;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 3em;
+    margin: 0 auto;
+    max-width: 80vw;
+    padding-top: 5em;
 }
 
-.caseMeta>p {
+.case-meta>p {
     margin: 1em 0;
 }
 
-.caseMeta {
+.case-meta {
     margin: 2em 0;
 }
 
-.caseDescription {
+.case-study {
     flex: 3;
     margin: 1em 0;
 }
 
-.caseDescription>h2 {
+.case-study>h2 {
     font-size: 2.5em;
 }
 
-.caseDescription>p {
-    margin-top: 1em;
+.case-study>p {
+    margin-top: 2em;
 }
 
 
@@ -256,19 +270,19 @@ h6 {
                 RESPONSIVE
  ---------------------------------*/
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 500px) {
 
     nav a,
-    .launchTitle a {
-        font-size: clamp(1rem, 2vw, 2rem);
+    .launch-title a {
+        font-size: clamp(1rem, 1vw, 2rem);
     }
 
     .case,
-    .caseContent {
+    .case-content {
         flex-direction: row;
     }
 
-    .launchTitle>h2 {
+    .launch-title>h2 {
         font-size: 3em;
     }
 
@@ -280,19 +294,25 @@ h6 {
     h3 {
         font-size: 0.7em;
     }
+     .case-content {
+         max-width: 75vw;
+         position: relative;
+         background-color: #EFEDEA;
+     }
 
     .case-cap {
         width: 20%;
         font-size: 1em;
     }
 
-    .meKop {
+    .me-kop {
         order: 1;
+        max-width: 25vw;
     }
 
-    .casePic {
+    .case-img {
         margin-right: 5em;
-        max-width: 40vw;
+        max-width: 30vw;
     }
 
     section.hero {
@@ -301,7 +321,7 @@ h6 {
         padding: 0 10em;
     }
 
-    .launchTitle {
+    .launch-title {
         order: 2;
     }
 
@@ -312,42 +332,45 @@ h6 {
         max-width: none;
     }
 
-    .caseCover:nth-child(1) {
+    .case-cover:nth-child(1) {
         width: 70%;
     }
 
     .wrapper {
-        justify-content: center;
         max-width: 70vw;
     }
 
-    .caseMeta {
+    .case-meta {
         flex: 2;
     }
 
-    .caseMeta>p {
+    .case-meta>p {
         max-width: 10em;
     }
 
-    .caseDescription {
+    .case-study {
         flex: 3;
         max-width: 30em;
 
     }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 1020px) {
     .hero {
         display: flex;
         flex-direction: row;
         margin: 6em 0;
     }
 
-    .launchTitle>h2 {
+    .launch-title>h2 {
         font-size: 8em;
     }
 
-    .meKop {
+    .case-img {
+        width: 30vw;
+    }
+
+    .me-kop {
         width: 30%;
     }
 
@@ -359,36 +382,33 @@ h6 {
         margin: 0 1em;
     }
 
+    
     .case-cap {
         font-size: 1.5em;
     }
-
-    .caseContent {
-        max-width: 80vw;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        background-color: #EFEDEA;
-    }
-
+   
+    
     /* CASES */
     h4 {
         font-size: 2em;
     }
-
+    .case-hero{
+        max-width: 80vw;
+    }
+    
     .wrapper {
         flex-direction: row;
-        margin: 10em;
+        max-width: 60vw;
     }
 
-    .caseMeta>p {
+    .case-meta>p {
         font-size: 1em;
         max-width: 10em;
         font-family: "ObjectSans-Thin", sans-serif;
         font-weight: 100;
     }
 
-    .caseDescription {
+    .case-study {
         flex: 4;
         font-size: 1.5em;
         max-width: 40em;
@@ -397,7 +417,9 @@ h6 {
 
 
 
-/* hover effect */
+/* --------------------------------
+            CSS ANIMATION
+ ---------------------------------*/
 .joannie {
     --deltax: 2;
     --deltay: 3;
