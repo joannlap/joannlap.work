@@ -15,28 +15,50 @@ body {
 
 @font-face {
     font-family: "NeueWorld";
-    src: url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
+    src: local('NeueWorld-ExtendedMedium'),
+        url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Pangram";
-    src: url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype"),
+    src: local('Pangram-ExtraLight'),
+        url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Pangram";
-    src: url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+    src: local('Pangram-Regular'),
+        url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pangram";
+    src: local('Pangram-Bold'),
+        url("../fonts/Pangram/Pangram-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Object-Sans";
-    src: url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
+    src: local('ObjectSans-thin'),
+        url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Object-Sans";
-    src: url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
-
+    src: local('ObjectSans-Regular'),
+        url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
 }
 
 /*
@@ -76,9 +98,11 @@ li {
 }
 
 nav a,
-.launch-title a, .connect a{
+.launch-title a,
+.connect a {
     font-family: "Pangram",
         sans-serif;
+    font-weight: 200;
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 3rem);
     color: #25292C;
@@ -136,9 +160,8 @@ h1 {
     right: 0;
     font-family: "Object-sans", sans-serif;
     font-weight: 100;
-    font-size: 3.5em;
+    font-size: 3em;
     color: #D1CBC2;
-
 }
 
 h2 a {
@@ -149,16 +172,18 @@ h2 a {
 }
 
 h3 {
-    font-family: "Object-sans", sans-serif;
-    font-weight: 100;
-    font-size: 1em;
+    font-family: "Pangram", sans-serif;
+    font-weight: 200;
+    font-size: clamp(1rem, 4vw, 3rem);
     color: #D1CBC2;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 p {
-    font-family: "Object-sans", sans-serif;
-    font-size: 1em;
+    font-family: "Object-sans",
+        sans-serif;
+    font-weight: 200;
+    font-size: clamp(1rem, 4vw, 3rem);
     line-height: 1.5;
 }
 
@@ -206,6 +231,7 @@ h4 {
 
 h5 {
     font-family: "Pangram", sans-serif;
+    font-weight: 400;
     font-size: 1em;
 }
 
@@ -215,7 +241,7 @@ h6 {
 }
 
 .case-cover {
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: center;
 }
@@ -226,10 +252,10 @@ h6 {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-
 }
 
-.wrapper, .contact-wrapper {
+.wrapper,
+.contact-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -272,24 +298,26 @@ h6 {
     margin-top: 2em;
 }
 
-.about-content>p:nth-child(2) {
+.about-content>p:nth-child(2),
+.about-content>p:nth-child(3) {
     margin-top: 1em;
 }
-.about-wrapper h2{
+
+.about-wrapper h2 {
     font-size: clamp(3rem, 2vw, 3rem);
 }
 
 /* --------------------------------
                 CONTACT
  ---------------------------------*/
- 
- .connect{
-     display: flex;
-     flex-direction: column;
-     margin-top: 1em;
- }
- 
- 
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+
 /* --------------------------------
                 RESPONSIVE
  ---------------------------------*/
@@ -298,7 +326,7 @@ h6 {
 
     nav a,
     .launch-title a {
-        font-size: clamp(1rem, 1vw, 2rem);
+        font-size: clamp(1.1rem, 1vw, 2rem);
     }
 
     .case,
@@ -379,16 +407,17 @@ h6 {
 
     }
 
-    /* ABOUT */
-    .about-wrapper{
-        flex-direction: row;
-        max-height: 60vh;
-    }
     .about-content>p {
         font-size: 1em;
     }
+
+    /* ABOUT */
+    .about-wrapper {
+        max-width: 40vw;
+    }
+
     /* CONTACT */
-    .contact-wrapper h2{
+    .contact-wrapper h2 {
         font-size: 5em;
     }
 }
@@ -453,11 +482,6 @@ h6 {
         max-width: 40em;
     }
 
-    /* ABOUT */
-    .about-wrapper {
-        max-width: 50vw;
-    }
-    
 
 }
 
@@ -523,4 +547,5 @@ h6 {
         opacity: 0;
     }
 }
+
 /* Bron: BIG SHOUTOUT TO Sanne 't Hooft for the hover effect */
