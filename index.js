@@ -84,4 +84,4 @@ function shoot() {
   }, 25);
 }
 
-// Bron: BIG SHOUTOUT TO Sanne 't Hooft
+// Bron: BIG SHOUTOUT TO Sanne 't Hooft for the hover effect
