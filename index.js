@@ -43,7 +43,7 @@ function shoot() {
 
 
   joannie = document.createElement("img");
-  joannie.src = "img/confetti.png";
+  joannie.src = "/img/confetti.png";
   joannie.classList.add("joannie");
 
   deltax = Math.random() * 6 - 3;
