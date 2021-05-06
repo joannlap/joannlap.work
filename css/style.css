@@ -483,14 +483,14 @@ h6 {
 
     position: absolute;
     width: calc(var(--width) * 0.8em);
-    height: calc(var(--height) * 0.8em);
+    height: calc(var(--height) * 1em);
     left: calc(var(--posx) * 1px - var(--width) * 0.5em + var(--deltax) * -1em);
 
     font-size: 2.5em;
     /* border-radius: 50%; */
     z-index: 2;
 
-    transform-origin: center 50%;
+    transform-origin: center 70%;
     animation: draai calc(var(--duur) * 1s) ease-out forwards,
         opneer calc(var(--duur) * 1s) forwards;
 }
