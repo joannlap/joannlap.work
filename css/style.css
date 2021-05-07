@@ -12,6 +12,9 @@ body {
     background-color: #F5F3F0;
     color: #25292C;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: "NeueWorld";
@@ -132,6 +135,10 @@ section.hero {
     padding-right: 1em;
     margin-top: 2em;
 }
+.launch-title p{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    padding-top: 1em;
+}
 
 .me-kop {
     width: 70%;
@@ -159,7 +166,7 @@ h1 {
     top: 0;
     right: 0;
     font-family: "Object-sans", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 3em;
     color: #D1CBC2;
 }
@@ -306,14 +313,40 @@ h6 {
 .about-wrapper h2 {
     font-size: clamp(3rem, 2vw, 3rem);
 }
-
 /* --------------------------------
-                CONTACT
- ---------------------------------*/
+              CONTACT
+---------------------------------*/
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 .connect {
     display: flex;
     flex-direction: column;
+}
+
+.connect, .connect a{
     margin-top: 1em;
 }
 
@@ -420,6 +453,9 @@ h6 {
     .contact-wrapper h2 {
         font-size: 5em;
     }
+   .material-icons {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 1020px) {
@@ -472,7 +508,7 @@ h6 {
     .case-meta>p {
         font-size: 1em;
         max-width: 10em;
-        font-family: "ObjectSans-Thin", sans-serif;
+        font-family: "Object-Sans", sans-serif;
         font-weight: 100;
     }
 
@@ -481,11 +517,21 @@ h6 {
         font-size: 1.5em;
         max-width: 40em;
     }
-
-
 }
 
+@media screen and (min-width: 2560px) {
+    .case-cap {
+        font-size: 3em;
+    }
 
+    .me-kop {
+        width: 25%;
+    }
+
+    .case-img {
+        width: 30%;
+    }
+}
 
 /* --------------------------------
             CSS ANIMATION
