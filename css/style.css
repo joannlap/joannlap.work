@@ -245,7 +245,7 @@ h6 {
     font-size: 1.5em;
 }
 
-.case-cover {
+.case-cover, .case-header {
     width: 110%;
     display: flex;
     justify-content: center;
@@ -432,7 +432,7 @@ h6 {
         max-width: none;
     }
 
-    .case-cover:nth-child(1) {
+    .case-header {
             width: 70%;
         }
 
@@ -472,8 +472,9 @@ h6 {
         margin-left: 2em;
     }
 
-    iframe {
-        width: 60vw;
+    iframe.giphy-woohah {
+        width: 20vw;
+        height: 40vh;
     }
 .bulletpoints {
     display: flex;
@@ -526,10 +527,6 @@ h6 {
     .case-cap {
         font-size: 1.5em;
     }
-
-    /* iframe {
-        width: 80vw;
-    } */
 
     /* CASESTUDIES */
     h4 {
