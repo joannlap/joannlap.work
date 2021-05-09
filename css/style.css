@@ -307,6 +307,14 @@ h6 {
 .alinea p {
     margin-top: 1em;
 }
+ .alinea a{
+     font-family: "Pangram", sans-serif;
+     font-weight: 200;
+     text-decoration: none;
+     font-size: 1em;
+     cursor: pointer;
+         color: #25292C;
+ }
 /* --------------------------------
                 ABOUT
  ---------------------------------*/
