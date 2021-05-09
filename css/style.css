@@ -480,8 +480,8 @@ h6 {
         margin-left: 2em;
     }
 
-    iframe.giphy-woohah {
-        width: 20vw;
+    iframe.giphy-woohah, iframe.giphy-tesla {
+        width: 30vw;
         height: 40vh;
     }
 .bulletpoints {
