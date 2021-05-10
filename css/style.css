@@ -1,64 +1,75 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: #F5F3F0;
-    color: #25292C;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #f5f3f0;
+  color: #25292c;
 }
 
 @font-face {
-    font-family: "NeueWorld";
-    src: local('NeueWorld-ExtendedMedium'),
-        url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "NeueWorld";
+  src: local("NeueWorld-ExtendedMedium"),
+    url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Neue World";
+  src: local("NeueWorld-ExtendedMedium"),
+    url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.woff2") format("woff2"),
+    url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.woff") format("woff"),
+    url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.otf") format("opentype"),
+    url("../fonts/NeueWorld/NeueWorld-ExtendedMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Pangram";
+  src: local("Pangram-ExtraLight"),
+    url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Pangram";
-    src: local('Pangram-ExtraLight'),
-        url("../fonts/Pangram/Pangram-ExtraLight.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Pangram";
+  src: local("Pangram-Regular"),
+    url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Pangram";
-    src: local('Pangram-Regular'),
-        url("../fonts/Pangram/Pangram-Regular.ttf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Pangram";
+  src: local("Pangram-Bold"),
+    url("../fonts/Pangram/Pangram-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Pangram";
-    src: local('Pangram-Bold'),
-        url("../fonts/Pangram/Pangram-Bold.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Object-Sans";
+  src: local("ObjectSans-thin"),
+    url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Object-Sans";
-    src: local('ObjectSans-thin'),
-        url("../fonts/Pangram/ObjectSans-thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Object-Sans";
-    src: local('ObjectSans-Regular'),
-        url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Object-Sans";
+  src: local("ObjectSans-Regular"),
+    url("../fonts/ObjectSans/ObjectSans-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 /*
@@ -76,83 +87,79 @@ body {
                 HOME
  ---------------------------------*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 3em 3em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3em 3em;
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  list-style-type: none;
 }
 
-
 li {
-    padding: 1px 0 0.5em 0;
-   
+  padding: 1px 0 0.5em 0;
 }
 
 nav a,
 .launch-title a,
 .connect a {
-    font-family: "Pangram",
-        sans-serif;
-    font-weight: 200;
-    text-decoration: none;
-    font-size: clamp(1rem, 4vw, 3rem);
-    color: #25292C;
-    cursor: pointer;
-
+  font-family: "Pangram", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: clamp(1rem, 4vw, 3rem);
+  color: #25292c;
+  cursor: pointer;
 }
 
 h2 {
-    font-size: 3.5em;
-    font-family: "NeueWorld", sans-serif;
-    font-weight: 100;
+  font-size: 3.5em;
+  font-family: "NeueWorld", sans-serif;
+  font-weight: 100;
 }
 
-.case-cap>h2 {
-    margin: 0.4em 0;
+.case-cap > h2 {
+  margin: 0.4em 0;
 }
 
 section.hero {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .launch-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 1em;
-    margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 1em;
+  margin-top: 2em;
 }
 
 .launch-title p {
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    padding-top: 1em;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  padding-top: 1em;
 }
 
 .me-kop {
-    width: 70%;
-    margin-left: -3em;
-    z-index: 10;
-    object-fit: scale-down;
+  width: 70%;
+  margin-left: -3em;
+  z-index: 10;
+  object-fit: scale-down;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    margin: 4em 0 2em;
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 2em;
 }
 
-footer>p {
-    font-size: 1em;
+footer > p {
+  font-size: 1em;
 }
 
 /*-------------------------------
@@ -160,67 +167,65 @@ footer>p {
  ---------------------------------*/
 
 h1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: "Object-sans", sans-serif;
-    font-weight: 200;
-    font-size: 3em;
-    color: #D1CBC2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Object-sans", sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #d1cbc2;
 }
 
 h2 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #25292C;
-    font-size: 0.7em;
+  text-decoration: none;
+  cursor: pointer;
+  color: #25292c;
+  font-size: 0.7em;
 }
 
 h3 {
-    font-family: "Pangram", sans-serif;
-    font-weight: 200;
-    font-size: clamp(1rem, 4vw, 3rem);
-    color: #D1CBC2;
-    line-height: 1;
+  font-family: "Pangram", sans-serif;
+  font-weight: 200;
+  font-size: clamp(1rem, 4vw, 3rem);
+  color: #d1cbc2;
+  line-height: 1;
 }
 
-p, li {
-    font-family: "Object-sans",
-        sans-serif;
-    font-weight: 200;
-    font-size: clamp(1rem, 4vw, 3rem);
-    line-height: 1.5;
+p,
+li {
+  font-family: "Object-sans", sans-serif;
+  font-weight: 200;
+  font-size: clamp(1rem, 4vw, 3rem);
+  line-height: 1.5;
 }
 
 .case {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    background-color: #EFEDEA;
-    flex-direction: column;
-    margin: 3em 0;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: #efedea;
+  flex-direction: column;
+  margin: 3em 0;
 }
 
 .case-content {
-    display: flex;
-    justify-content: space-around;
-    background-color: #EFEDEA;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  background-color: #efedea;
+  flex-direction: column;
 }
 
 .case-cap {
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2.5em;
-    width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2.5em;
+  width: 50%;
 }
 
-
 .case-img {
-    width: 80%;
-    object-fit: contain;
-    margin-left: 1.5em;
-
+  width: 80%;
+  object-fit: contain;
+  margin-left: 1.5em;
 }
 
 /* --------------------------------
@@ -228,108 +233,108 @@ p, li {
  ---------------------------------*/
 
 h4 {
-    margin: 0 2em;
-    max-width: 15em;
-    font-family: "NeueWorld", sans-serif;
-    font-weight: 100;
+  margin: 0 2em;
+  max-width: 15em;
+  font-family: "NeueWorld", sans-serif;
+  font-weight: 100;
 }
 
 h5 {
-    font-family: "Pangram", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
+  font-family: "Pangram", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 h6 {
-    margin: 1em 0;
-    font-size: 1.5em;
+  margin: 1em 0;
+  font-size: 1.5em;
 }
 
-.case-cover, .case-header {
-    width: 110%;
-    display: flex;
-    justify-content: center;
+.case-cover,
+.case-header {
+  width: 110%;
+  display: flex;
+  justify-content: center;
 }
-
 
 .case-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .wrapper,
 .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 80vw;
-    padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80vw;
+  padding-top: 5em;
 }
 
 .about-wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-.case-meta>p {
-    margin: 1em 0;
+.case-meta > p {
+  margin: 1em 0;
 }
 
 .case-meta {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .case-study {
-    flex: 3;
-    margin: 1em 0;
+  flex: 3;
+  margin: 1em 0;
 }
 
-.case-study>h2 {
-    font-size: 2.5em;
+.case-study > h2 {
+  font-size: 2.5em;
 }
 
 .features {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .bulletpoints li {
-    list-style-type: disc;
+  list-style-type: disc;
 }
-.bulletpoints{
-    align-items: flex-start;
+.bulletpoints {
+  align-items: flex-start;
 }
 .alinea {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 .alinea p {
-    margin-top: 1em;
+  margin-top: 1em;
 }
- .alinea a{
-     font-family: "Pangram", sans-serif;
-     font-weight: 200;
-     text-decoration: none;
-     font-size: 1em;
-     cursor: pointer;
-         color: #25292C;
- }
+.alinea a {
+  font-family: "Pangram", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  color: #25292c;
+}
 /* --------------------------------
                 ABOUT
  ---------------------------------*/
 
 .about-content {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
-.about-content>p:nth-child(2),
-.about-content>p:nth-child(3) {
-    margin-top: 1em;
+.about-content > p:nth-child(2),
+.about-content > p:nth-child(3) {
+  margin-top: 1em;
 }
 
 .about-wrapper h2 {
-    font-size: clamp(3rem, 2vw, 3rem);
+  font-size: clamp(3rem, 2vw, 3rem);
 }
 
 /* --------------------------------
@@ -337,314 +342,314 @@ h6 {
 ---------------------------------*/
 
 .material-icons-round {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
 
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
 
-    /* Support for IE. */
-    font-feature-settings: 'liga';
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
 
 .connect {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .connect,
 .connect a {
-    margin-top: 1em;
+  margin-top: 1em;
 }
-
 
 /* --------------------------------
                 RESPONSIVE
  ---------------------------------*/
 
 @media screen and (min-width: 500px) {
+  nav a,
+  .launch-title a {
+    font-size: clamp(1.1rem, 1vw, 2rem);
+  }
 
-    nav a,
-    .launch-title a {
-        font-size: clamp(1.1rem, 1vw, 2rem);
-    }
+  .case,
+  .case-content {
+    flex-direction: row;
+  }
 
-    .case,
-    .case-content {
-        flex-direction: row;
-    }
+  .launch-title > h2 {
+    font-size: 3em;
+  }
 
-    .launch-title>h2 {
-        font-size: 3em;
-    }
+  h2 {
+    font-size: 2em;
+  }
 
-    h2 {
-        font-size: 2em;
-    }
+  p,
+  h3,
+  li {
+    font-size: 0.7em;
+  }
 
-    p,
-    h3, li{
-        font-size: 0.7em;
-    }
+  .case-content {
+    max-width: 75vw;
+    position: relative;
+    background-color: #efedea;
+  }
 
-    .case-content {
-        max-width: 75vw;
-        position: relative;
-        background-color: #EFEDEA;
-    }
+  .case-cap {
+    width: 20%;
+    font-size: 1em;
+  }
 
-    .case-cap {
-        width: 20%;
-        font-size: 1em;
-    }
+  .me-kop {
+    order: 1;
+    max-width: 25vw;
+  }
 
-    .me-kop {
-        order: 1;
-        max-width: 25vw;
-    }
+  .case-img {
+    margin-right: 5em;
+    max-width: 30vw;
+  }
 
-    .case-img {
-        margin-right: 5em;
-        max-width: 30vw;
-    }
+  section.hero {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10em;
+  }
 
-    section.hero {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0 10em;
-    }
+  .launch-title {
+    order: 2;
+  }
 
-    .launch-title {
-        order: 2;
-    }
+  /* CASESTUDIES */
+  h4 {
+    font-size: 1em;
+    max-width: none;
+  }
 
+  .case-header {
+    width: 70%;
+  }
 
-    /* CASESTUDIES */
-    h4 {
-        font-size: 1em;
-        max-width: none;
-    }
+  .wrapper {
+    max-width: 70vw;
+  }
 
-    .case-header {
-            width: 70%;
-        }
+  .case-meta {
+    flex: 2;
+  }
 
-    .wrapper {
-        max-width: 70vw;
-    }
+  .case-meta > p {
+    max-width: 10em;
+  }
 
-    .case-meta {
-        flex: 2;
-    }
+  .case-study {
+    flex: 3;
+    max-width: 30em;
+  }
 
-    .case-meta>p {
-        max-width: 10em;
-    }
+  .about-content > p {
+    font-size: 1em;
+  }
 
-    .case-study {
-        flex: 3;
-        max-width: 30em;
-    }
+  .features {
+    flex-direction: row;
+    max-width: 30em;
+    margin: 3em 0;
+  }
 
-    .about-content>p {
-        font-size: 1em;
-    }
+  .features:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 
-    .features {
-        flex-direction: row;
-       max-width: 30em;
-       margin: 3em 0;
-    }
-  
+  .feature-des {
+    margin-left: 2em;
+  }
 
-    .features:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    .feature-des {
-        margin-left: 2em;
-    }
-
-    iframe.giphy-woohah, iframe.giphy-tesla {
-        width: 30vw;
-        height: 40vh;
-    }
-.bulletpoints {
+  iframe.giphy-woohah,
+  iframe.giphy-tesla {
+    width: 30vw;
+    height: 40vh;
+  }
+  .bulletpoints {
     display: flex;
     flex-direction: column;
-}
+  }
 
+  /* ABOUT */
+  .about-wrapper {
+    max-width: 40vw;
+  }
 
-    /* ABOUT */
-    .about-wrapper {
-        max-width: 40vw;
-    }
+  /* CONTACT */
+  .contact-wrapper h2 {
+    font-size: 5em;
+  }
 
-    /* CONTACT */
-    .contact-wrapper h2 {
-        font-size: 5em;
-    }
-
-    .material-icons {
-        font-size: 40px;
-    }
+  .material-icons {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 1020px) {
-    .hero {
-        display: flex;
-        flex-direction: row;
-        margin: 6em 0;
-    }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    margin: 6em 0;
+  }
 
-    .launch-title>h2 {
-        font-size: 8em;
-    }
+  .launch-title > h2 {
+    font-size: 8em;
+  }
 
-    .case-img {
-        width: 30vw;
-    }
+  .case-img {
+    width: 30vw;
+  }
 
-    .me-kop {
-        width: 30%;
-    }
+  .me-kop {
+    width: 30%;
+  }
 
-    ul {
-        flex-direction: row;
-    }
+  ul {
+    flex-direction: row;
+  }
 
-    li {
-        margin: 0 1em;
-    }
+  li {
+    margin: 0 1em;
+  }
 
-    .case-cap {
-        font-size: 1.5em;
-    }
+  .case-cap {
+    font-size: 1.5em;
+  }
 
-    /* CASESTUDIES */
-    h4 {
-        font-size: 2em;
-    }
+  /* CASESTUDIES */
+  h4 {
+    font-size: 2em;
+  }
 
-    .case-hero {
-        max-width: 70vw;
-    }
+  .case-hero {
+    max-width: 70vw;
+  }
 
-    .wrapper {
-        flex-direction: row;
-        max-width: 60vw;
-    }
+  .wrapper {
+    flex-direction: row;
+    max-width: 60vw;
+  }
 
-    .case-meta>p {
-        font-size: 1em;
-        max-width: 10em;
-        font-family: "Object-Sans", sans-serif;
-        font-weight: 100;
-    }
+  .case-meta > p {
+    font-size: 1em;
+    max-width: 10em;
+    font-family: "Object-Sans", sans-serif;
+    font-weight: 100;
+  }
 
-    .case-study {
-        flex: 4;
-        font-size: 1.5em;
-        max-width: 30em;
-    }
+  .case-study {
+    flex: 4;
+    font-size: 1.5em;
+    max-width: 30em;
+  }
 }
 
 @media screen and (min-width: 2560px) {
-    .case-cap {
-        font-size: 3em;
-    }
+  .case-cap {
+    font-size: 3em;
+  }
 
-    .case-hero {
-        max-width: 55vw;
-    }
+  .case-hero {
+    max-width: 55vw;
+  }
 
-    .wrapper {
-        max-width: 40vw;
-    }
+  .wrapper {
+    max-width: 40vw;
+  }
 
-    .me-kop {
-        width: 25%;
-    }
+  .me-kop {
+    width: 25%;
+  }
 
-    .case-img {
-        width: 30%;
-    }
+  .case-img {
+    width: 30%;
+  }
 }
 
 /* --------------------------------
             CSS ANIMATION
  ---------------------------------*/
 .joannie {
-    --deltax: 2;
-    --deltay: 3;
-    --scale: 0.25;
-    --richting: 1;
-    --rotatie: 2.5;
-    --duur: 1.5;
+  --deltax: 2;
+  --deltay: 3;
+  --scale: 0.25;
+  --richting: 1;
+  --rotatie: 2.5;
+  --duur: 1.5;
 
-    --width: 2.2;
-    --height: 2;
+  --width: 2.2;
+  --height: 2;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    width: calc(var(--width) * 0.8em);
-    height: calc(var(--height) * 1em);
-    left: calc(var(--posx) * 1px - var(--width) * 0.5em + var(--deltax) * -1em);
+  position: absolute;
+  width: calc(var(--width) * 0.8em);
+  height: calc(var(--height) * 1em);
+  left: calc(var(--posx) * 1px - var(--width) * 0.5em + var(--deltax) * -1em);
 
-    font-size: 2.5em;
-    /* border-radius: 50%; */
-    z-index: 2;
+  font-size: 2.5em;
+  /* border-radius: 50%; */
+  z-index: 2;
 
-    transform-origin: center 70%;
-    animation: draai calc(var(--duur) * 1s) ease-out forwards,
-        opneer calc(var(--duur) * 1s) forwards;
+  transform-origin: center 70%;
+  animation: draai calc(var(--duur) * 1s) ease-out forwards,
+    opneer calc(var(--duur) * 1s) forwards;
 }
 
 @keyframes draai {
-    0% {
-        transform: rotate(0turn) translatex(calc(var(--deltax) * 1em)) rotate(0turn);
-    }
+  0% {
+    transform: rotate(0turn) translatex(calc(var(--deltax) * 1em)) rotate(0turn);
+  }
 
-    100% {
-        transform: rotate(calc(var(--richting) * 0.5turn)) translatex(calc(var(--deltax) * 1em)) rotate(calc(var(--rotatie) * 1turn));
-    }
+  100% {
+    transform: rotate(calc(var(--richting) * 0.5turn))
+      translatex(calc(var(--deltax) * 1em)) rotate(calc(var(--rotatie) * 1turn));
+  }
 }
 
 @keyframes opneer {
-    0% {
-        opacity: 1;
-        top: calc(var(--posy) * 1px - (var(--width) + 0.125) * 1em);
-        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    }
+  0% {
+    opacity: 1;
+    top: calc(var(--posy) * 1px - (var(--width) + 0.125) * 1em);
+    animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-    30% {
-        top: calc(var(--posy) * 1px - (var(--width) + 0.125) * 1em - var(--deltay) * 1em);
-        opacity: 1;
-        animation-timing-function: ease-in;
-    }
+  30% {
+    top: calc(
+      var(--posy) * 1px - (var(--width) + 0.125) * 1em - var(--deltay) * 1em
+    );
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
 
-    100% {
-        top: 100%;
-        opacity: 0;
-    }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
 }
 
 /* Bron: BIG SHOUTOUT TO Sanne 't Hooft for the hover effect */
