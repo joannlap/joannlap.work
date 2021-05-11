@@ -231,7 +231,16 @@ li {
 /* --------------------------------
            CASE STUDIES
  ---------------------------------*/
-
+button {
+  width: 250px;
+  padding: 10px;
+  margin: 0.5em;
+  border-radius: 3.1rem;
+  border-width: 0.1em;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 h4 {
   margin: 0 2em;
   max-width: 15em;
