@@ -232,11 +232,12 @@ li {
            CASE STUDIES
  ---------------------------------*/
 button {
-  width: 250px;
+  width: 200px;
   padding: 10px;
   margin: 0.5em;
   border-radius: 3.1rem;
-  border-width: 0.1em;
+  border: 0.1em solid;
+  border-color: #d1cbc2;
   cursor: pointer;
   background-color: transparent;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
