@@ -314,6 +314,7 @@ h6 {
 }
 .bulletpoints {
   align-items: flex-start;
+  margin-top: 1em;
 }
 .alinea {
   margin-top: 1.5em;
